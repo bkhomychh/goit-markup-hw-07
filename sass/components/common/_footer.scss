@@ -1,0 +1,41 @@
+.footer {
+  padding: 60px 0;
+  background-color: $primary-background-color;
+
+  &__container {
+    @include flex($ai: baseline);
+  }
+
+  &__wrap:nth-child(1) {
+    margin-right: 70px;
+  }
+
+  &__wrap:nth-child(2) {
+    margin-right: 95px;
+  }
+
+  &__wrap:nth-child(3) {
+    flex-grow: 1;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__address {
+    width: 231px;
+  }
+
+  &__call {
+    display: block;
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $tertiary-color;
+  }
+}
