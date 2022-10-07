@@ -23,7 +23,6 @@
 
   --items-amount: 4;
   --gap-size: 30px;
-  --gallery-item-gap: 30px;
 
   --primary-cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -712,15 +711,15 @@ body {
 .gallery {
   background-color: var(--tertiary-color);
 }
-.gallery-filters {
+
+.filter-set {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
+  gap: 8px;
 }
-.gallery-filter:not(:last-child) {
-  margin-right: 8px;
-}
-.gallery-button {
+
+.filter-set__btn {
   padding: 6px 22px;
 
   font-weight: 500;
@@ -737,49 +736,54 @@ body {
 
   cursor: pointer;
 }
-.gallery-button:hover,
-.gallery-button:focus {
+
+.filter-set__btn:hover,
+.filter-set__btn:focus {
   color: var(--tertiary-color);
   background-color: var(--accent-color);
   box-shadow: var(--button-shadow);
 }
-.gallery-items {
+
+.gallery__list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--gallery-item-gap));
-  margin-left: calc(-1 * var(--gallery-item-gap));
+  margin-top: calc(-1 * var(--gap-size));
+  margin-left: calc(-1 * var(--gap-size));
 }
-.gallery-item {
-  margin-top: var(--gallery-item-gap);
-  margin-left: var(--gallery-item-gap);
-  flex-basis: calc((100% / 3 - var(--gallery-item-gap)));
+
+.gallery__item {
+  margin-top: var(--gap-size);
+  margin-left: var(--gap-size);
+  flex-basis: calc((100% / 3 - var(--gap-size)));
 }
-.gallery-link {
+
+.gallery__card {
   display: block;
 
   transition: box-shadow 250ms var(--primary-cubic-bezier);
 }
-.gallery-link:hover,
-.gallery-link:focus {
+
+.gallery__card:hover,
+.gallery__card:focus {
   box-shadow: var(--gallery-item-shadow);
 }
 
-.gallery-link:hover .gallery-overlay,
-.gallery-link:focus .gallery-overlay {
+.gallery__card:hover .gallery__overlay,
+.gallery__card:focus .gallery__overlay {
   transform: translateY(0);
 }
 
-.gallery-thumb {
+.gallery__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.gallery-image {
+.gallery__img {
   max-width: 100%;
   display: block;
 }
 
-.gallery-overlay {
+.gallery__overlay {
   position: absolute;
   left: 0;
   top: 0;
@@ -801,11 +805,12 @@ body {
   transition: transform 250ms var(--primary-cubic-bezier);
 }
 
-.gallery-details {
+.gallery__details {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
-.gallery-subtitle {
+
+.gallery__subtitle {
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
@@ -813,7 +818,8 @@ body {
   letter-spacing: 0.06em;
   color: var(--primary-color);
 }
-.gallery-description {
+
+.gallery__desc {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
