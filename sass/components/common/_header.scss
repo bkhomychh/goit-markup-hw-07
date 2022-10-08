@@ -30,11 +30,13 @@
   &__list {
     display: flex;
   }
+  
   &__item {
     display: flex;
     position: relative;
-  }
-  &__item:not(:last-child) {
-    margin-right: 50px;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }

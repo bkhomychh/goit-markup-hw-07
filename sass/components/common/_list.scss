@@ -3,10 +3,10 @@
 
   &__item {
     position: relative;
-  }
-
-  &__item:not(:last-child) {
-    margin-right: $gap-size;
+    
+    &:not(:last-child) {
+      margin-right: $gap-size;
+    }
   }
 
   &__thumb {

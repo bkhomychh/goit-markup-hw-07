@@ -18,18 +18,19 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: transparent;
-  }
 
-  &__email::placeholder {
-    font-weight: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    letter-spacing: inherit;
-    color: inherit;
+    &::placeholder {
+      font-weight: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      letter-spacing: inherit;
+      color: inherit;
+    }
   }
 
   &__btn {
     @include flex;
+    
     padding: 10px 28px;
   }
 }

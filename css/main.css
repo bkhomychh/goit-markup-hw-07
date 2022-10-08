@@ -644,6 +644,7 @@ body {
   padding: 60px 0;
   background-color: #2f303a;
 }
+
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -659,6 +660,7 @@ body {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
+
 .footer__wrap:nth-child(1) {
   margin-right: 70px;
 }
@@ -670,13 +672,16 @@ body {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
+
 .footer__logo {
   display: block;
   margin-bottom: 20px;
 }
+
 .footer__address {
   width: 231px;
 }
+
 .footer__call {
   display: block;
   margin-bottom: 20px;
@@ -1010,17 +1015,9 @@ body {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.gallery__card:hover,
-.gallery__card:focus {
+.gallery__card:hover, .gallery__card:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.gallery__card:hover .gallery__overlay,
-.gallery__card:focus .gallery__overlay {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .gallery__thumb {
@@ -1057,6 +1054,10 @@ body {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.gallery__card:hover .gallery__overlay, .gallery__card:focus .gallery__overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .gallery__details {
@@ -1107,9 +1108,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
-
-.filter-set__btn:hover,
-.filter-set__btn:focus {
+.filter-set__btn:hover, .filter-set__btn:focus {
   color: #ffffff;
   background-color: #2196f3;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);

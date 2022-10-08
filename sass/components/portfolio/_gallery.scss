@@ -18,16 +18,11 @@
   display: block;
 
   transition: box-shadow 250ms $primary-cubic-bezier;
-}
 
-.gallery__card:hover,
-.gallery__card:focus {
-  box-shadow: $gallery-item-shadow;
-}
-
-.gallery__card:hover .gallery__overlay,
-.gallery__card:focus .gallery__overlay {
-  transform: translateY(0);
+  &:hover,
+  &:focus {
+    box-shadow: $gallery-item-shadow;
+  }
 }
 
 .gallery__thumb {
@@ -60,6 +55,11 @@
 
   transform: translateY(100%);
   transition: transform 250ms $primary-cubic-bezier;
+
+  .gallery__card:hover &,
+  .gallery__card:focus & {
+    transform: translateY(0);
+  }
 }
 
 .gallery__details {

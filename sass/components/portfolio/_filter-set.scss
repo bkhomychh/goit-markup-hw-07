@@ -21,11 +21,11 @@
     box-shadow 250ms $primary-cubic-bezier;
 
   cursor: pointer;
-}
 
-.filter-set__btn:hover,
-.filter-set__btn:focus {
-  color: $tertiary-color;
-  background-color: $accent-color;
-  box-shadow: $button-shadow;
+  &:hover,
+  &:focus {
+    color: $tertiary-color;
+    background-color: $accent-color;
+    box-shadow: $button-shadow;
+  }
 }
